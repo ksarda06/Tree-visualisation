@@ -8,20 +8,26 @@
 </head>
 <body>
   <div class="container">
-    <h1>Binary Tree Visualizer</h1>
+    <h1 id="top">Binary Search Tree</h1>
 
     <!-- Controls for interaction -->
     <div class="controls">
-      <input type="number" id="nodeValue" placeholder="Enter node value">
+      <input type="number" id="nodeValue"  placeholder="Enter node value">
       <button id="insertNode">Insert Node</button>
       <button id="deleteNode">Delete Node</button>
       <button id="inOrder">In-Order Traversal</button>
       <button id="preOrder">Pre-Order Traversal</button>
       <button id="postOrder">Post-Order Traversal</button>
     </div>
-
     <!-- Area for drawing the binary tree -->
-    <canvas id="treeCanvas" width="500" height="500"></canvas>
+    <canvas id="treeCanvas" width="2200" height="900"></canvas>
+    <div class="canvas-size">
+      <p>W:</p>
+      <input type="number" id="userInputWidth" value="2200">
+      <p>H:</p>
+      <input type="number" id="userInputHeight" value="900">
+      <button id="Change-size">Change Canvas Size</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
