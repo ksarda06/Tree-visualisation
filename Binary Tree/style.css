@@ -3,27 +3,57 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: #f0f0f0;
-    margin: 0;
+    box-sizing: border-box;
   }
-  
   .container {
+    margin-top: 0px;
     text-align: center;
-    padding: 20px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(235, 231, 231);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
-  h1 {
-    margin-bottom: 20px;
+  .container h1 {
+    font-size: 60px;
   }
   
   .controls {
+    margin-top: 20px;
     margin-bottom: 20px;
   }
-  
+  #nodeValue{
+    font-size:30px;
+  }
+  #insertNode{
+    font-size:30px;
+  }
+  #insertNode:hover{
+    background-color: #60c8f1;
+  }
+  #deleteNode{
+    font-size:30px;
+  }
+  #deleteNode:hover{
+    background-color: #60c8f1;
+  }
+  #inOrder{
+    font-size:30px;
+  }
+  #inOrder:hover{
+    background-color: #60c8f1;
+  }
+  #preOrder{
+    font-size:30px;
+  }
+  #preOrder:hover{
+    background-color: #60c8f1;
+  }
+  #postOrder{
+    font-size:30px;
+  }
+  #postOrder:hover{
+    background-color: #60c8f1;
+  }
   input {
     padding: 8px;
     font-size: 16px;
@@ -54,4 +84,8 @@ body {
     border-radius: 10px;
     overflow: hidden;
   }
-  
+  .canvas-size{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+  }
