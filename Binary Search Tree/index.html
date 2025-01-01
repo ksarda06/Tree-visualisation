@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary Search Tree Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Binary Search Tree</h1>
+
+    <!-- Controls for interaction -->
+    <div class="controls">
+      <input type="number" id="nodeValue"  placeholder="Enter node value">
+      <button id="insertNode">Insert Node</button>
+      <button id="deleteNode">Delete Node</button>
+      <button id="inOrder">In-Order Traversal</button>
+      <button id="preOrder">Pre-Order Traversal</button>
+      <button id="postOrder">Post-Order Traversal</button>
+    </div>
+    <!-- Area for drawing the binary tree -->
+    <canvas id="treeCanvas" width="2200" height="900"></canvas>
+    <div class="canvas-size">
+      <p>W:</p>
+      <input type="number" id="userInputWidth" value="2200">
+      <p>H:</p>
+      <input type="number" id="userInputHeight" value="900">
+      <button id="Change-size">Change Canvas Size</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
