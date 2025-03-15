@@ -146,17 +146,17 @@ class TreeNode {
 
   function insertion() {
     const path=[];
-    const value = parseInt(document.getElementById('nodeValue').value);
+    const value = parseInt(document.getElementById('valueInput').value);
     if (!isNaN(value)) {
       binaryTree.root=binaryTree.insert(path,binaryTree.root,value);
       animateInsertion(path);
-      document.getElementById('nodeValue').value = '';
+      document.getElementById('valueInput').value = '';
     }
     
   }
   
   function deletion() {
-    const value = parseInt(document.getElementById('nodeValue').value);
+    const value = parseInt(document.getElementById('valueInput').value);
     if (!isNaN(value)) {
       const path=[];
       let successor=null;
@@ -166,7 +166,7 @@ class TreeNode {
          
       animateDeletion(path,delNode,successor);      
       
-      document.getElementById('nodeValue').value = '';
+      document.getElementById('valueInput').value = '';
     }
   }
 
@@ -299,8 +299,7 @@ class TreeNode {
   const ctx = canvas.getContext('2d');
   
   // Button Actions
-  document.getElementById('insertNode').addEventListener('click', insertion);
-  document.getElementById('deleteNode').addEventListener('click', deletion);
+  
   document.getElementById('inOrder').addEventListener('click', function () {
     binaryTree.inOrderTraversal();
   });

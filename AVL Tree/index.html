@@ -4,24 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AVL Tree Visualizer</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../Splay Tree/style.css">
 </head>
 <body>
   <div class="container">
     <h1>AVL Tree Visualizer</h1>
-    <div>
+    <div style="background-color: blue;">
       <input type="number" id="valueInput" placeholder="Enter value">
-      <button id="insertNode">Insert</button>
-      <button id="deleteNode">Delete</button>
-      <button id="searchNode">Search</button>
+      <button onclick="insertion()">Insert</button>
+      <button onclick="deletion()">Delete</button>
+      <button onclick="searchNode()">Search</button>
     </div>
-    <canvas id="treeCanvas" width="2200" height="900"></canvas>
+    <canvas id="treeCanvas" width="1350" height="520"></canvas>
     <div class="canvas-size">
-        <p>W:</p>
-        <input type="number" id="userInputWidth" value="2200">
-        <p>H:</p>
-        <input type="number" id="userInputHeight" value="900">
-        <button id="Change-size">Change Canvas Size</button>
+    <p>W:</p>
+    <input type="number" id="userInputWidth" value="1350">
+    <p>H:</p>
+    <input type="number" id="userInputHeight" value="520">
+    <button onclick="changeCanvasSize()">Change Canvas Size</button>
     </div>
   </div>
   

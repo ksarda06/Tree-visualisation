@@ -4,32 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Binary Search Tree Visualizer</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../Splay Tree/style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Binary Search Tree</h1>
-
-    <!-- Controls for interaction -->
-    <div class="controls">
-      <input type="number" id="nodeValue"  placeholder="Enter node value">
-      <button id="insertNode">Insert Node</button>
-      <button id="deleteNode">Delete Node</button>
-      <button id="inOrder">In-Order Traversal</button>
-      <button id="preOrder">Pre-Order Traversal</button>
-      <button id="postOrder">Post-Order Traversal</button>
+    <h1>Binary Search Tree Visualizer</h1>
+    <div style="background-color: blue;">
+      <input type="number" id="valueInput" placeholder="Enter value">
+      <button onclick="insertion()">Insert</button>
+      <button onclick="deletion()">Delete</button>
+      <button id="inOrder">Inorder</button>
+      <button id="postOrder">Postorder</button>
+      <button id="preOrder">Preorder</button>
     </div>
-    <!-- Area for drawing the binary tree -->
-    <canvas id="treeCanvas" width="2200" height="900"></canvas>
+    <canvas id="treeCanvas" width="1350" height="520"></canvas>
     <div class="canvas-size">
-      <p>W:</p>
-      <input type="number" id="userInputWidth" value="2200">
-      <p>H:</p>
-      <input type="number" id="userInputHeight" value="900">
-      <button id="Change-size">Change Canvas Size</button>
+    <p>W:</p>
+    <input type="number" id="userInputWidth" value="1350">
+    <p>H:</p>
+    <input type="number" id="userInputHeight" value="520">
+    <button id="Change-size">Change Canvas Size</button>
     </div>
   </div>
-
+  
   <script src="script.js"></script>
 </body>
 </html>
+

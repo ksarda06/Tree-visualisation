@@ -410,9 +410,4 @@ const avlTree = new AVLTree();
 const canvas=document.getElementById('treeCanvas');
 const ctx=canvas.getContext('2d');
 
-// Button Actions
-document.getElementById('insertNode').addEventListener('click', insertion);
-document.getElementById('deleteNode').addEventListener('click', deletion);
-document.getElementById('searchNode').addEventListener('click', searchNode);
-document.getElementById("Change-size").addEventListener('click',changeCanvasSize);
 
