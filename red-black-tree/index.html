@@ -9,13 +9,12 @@
 <body>
   <div class="container">
     <h1>Red-Black Tree Visualization</h1>
-    <div style="background-color: blue;" id="controls">
+    <div style="background-color: blue;">
       <input type="number" id="valueInput" placeholder="Enter value">
       <button onclick="insert()">Insert</button>
       <button onclick="search()">Search</button>
       <button onclick="deleteNode()">Delete</button>
     </div>
-  </div>
     <canvas id="treeCanvas" width="1350" height="520"></canvas>
     <div class="canvas-size">
       <p>W:</p>
@@ -24,6 +23,7 @@
       <input type="number" id="userInputHeight" value="520">
       <button id="Change-size">Change Canvas Size</button>
     </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
