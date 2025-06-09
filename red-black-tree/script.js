@@ -8,7 +8,8 @@ class Node {
       this.parent = null;
     }
   }
-  
+  let canvas = document.getElementById("canvas");
+  let ctx = canvas.getContext("2d");
   // Red-Black Tree Class
   class RedBlackTree {
     constructor() {
@@ -310,8 +311,8 @@ class Node {
   
   // Global Tree Instance
   let tree = new RedBlackTree();
-  let canvas = document.getElementById("canvas");
-  let ctx = canvas.getContext("2d");
+  //let canvas = document.getElementById("canvas");
+  //let ctx = canvas.getContext("2d");
   
   // Insert Button Handler
   function insert() {
