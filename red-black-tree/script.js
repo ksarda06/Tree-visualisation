@@ -335,8 +335,6 @@ class Node {
     drawTree();
   }
   function changeCanvasSize(){
-    const canvas = document.getElementById('canvas');
-    const ctx = canvas.getContext('2d');
     const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     const newWidth = document.getElementById('userInputWidth').value;
     const newHeight = document.getElementById('userInputHeight').value;
