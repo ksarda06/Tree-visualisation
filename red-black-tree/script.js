@@ -8,8 +8,8 @@ class Node {
       this.parent = null;
     }
   }
-  let canvas = document.getElementById("canvas");
-  let ctx = canvas.getContext("2d");
+  //let canvas = document.getElementById("canvas");
+  //let ctx = canvas.getContext("2d");
   // Red-Black Tree Class
   class RedBlackTree {
     constructor() {
@@ -346,6 +346,8 @@ class Node {
   }
   // Draw Tree on Canvas
   function drawTree() {
+     let canvas = document.getElementById("canvas");
+     let ctx = canvas.getContext("2d");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     tree.render(ctx, tree.root, canvas.width / 2, 50, 200);
   }
