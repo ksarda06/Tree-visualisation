@@ -311,8 +311,8 @@ class Node {
   
   // Global Tree Instance
   let tree = new RedBlackTree();
-  //let canvas = document.getElementById("canvas");
-  //let ctx = canvas.getContext("2d");
+  let canvas = document.getElementById("treeCanvas");
+  let ctx = canvas.getContext("2d");
   
   // Insert Button Handler
   function insert() {
@@ -346,8 +346,8 @@ class Node {
   }
   // Draw Tree on Canvas
   function drawTree() {
-     let canvas = document.getElementById("canvas");
-     let ctx = canvas.getContext("2d");
+     //let canvas = document.getElementById("canvas");
+     //let ctx = canvas.getContext("2d");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     tree.render(ctx, tree.root, canvas.width / 2, 50, 200);
   }
