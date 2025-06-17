@@ -1,21 +1,34 @@
 // Red-Black Tree Node
 class Node {
     constructor(value) {
-      this.value = value;
+      /*this.value = value;
       this.color = 'red'; // New nodes are always red
       this.left = null;
       this.right = null;
-      this.parent = null;
+      this.parent = null;*/
+    this.canvas=document.getElementById('treeCanvas');
+    this.value = value;
+    this.left = null;
+    this.right = null;
+    this.height=1;
+    this.x = this.canvas.width/2; // X position for rendering
+    this.y = 70; // Y position for rendering
+    this.levelWidth=this.canvas.width/4;
     }
   }
-  //let canvas = document.getElementById("canvas");
-  //let ctx = canvas.getContext("2d");
   // Red-Black Tree Class
   class RedBlackTree {
     constructor() {
-      this.TNULL = new Node(null); // Sentinel node (NIL)
+      /*this.TNULL = new Node(null); // Sentinel node (NIL)
       this.TNULL.color = 'black';
-      this.root = this.TNULL;
+      this.root = this.TNULL;*/
+    this.root = null;
+    this.canvas = document.getElementById('treeCanvas');
+    this.ctx = this.canvas.getContext('2d');
+    this.offsetX = 50; // Initial offset for drawing
+    this.offsetY = 70;
+    this.nodeRadius = 40;
+
     }
   
     // Rotate left
