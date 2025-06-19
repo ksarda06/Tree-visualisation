@@ -125,7 +125,7 @@ class Node {
       let y = null;
       let x = this.root;
   
-      while (x !== this.TNULL) {
+      while (x && x !== this.TNULL) {
         y = x;
         if (node.value < x.value) {
           x = x.left;
