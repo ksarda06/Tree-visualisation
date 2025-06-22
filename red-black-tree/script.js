@@ -75,7 +75,7 @@ class Node {
       while (k.parent.color === 'red') {
         if (k.parent === k.parent.parent.right) {
           u = k.parent.parent.left;
-          if (u.color === 'red') {
+          if (u && u.color === 'red') {
             u.color = 'black';
             k.parent.color = 'black';
             k.parent.parent.color = 'red';
@@ -91,7 +91,7 @@ class Node {
           }
         } else {
           u = k.parent.parent.right;
-          if (u.color === 'red') {
+          if (u && u.color === 'red') {
             u.color = 'black';
             k.parent.color = 'black';
             k.parent.parent.color = 'red';
