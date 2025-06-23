@@ -72,12 +72,12 @@ main {
     padding: 20px;
     color:#f4f4f4;
     border: 1px solid #ddd;
-    font-size: 40px;
+    font-size: 20px;
     border-radius: 20px;
     width: 30%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: 300px;
-    width: 500px;
+    height: 150px;
+    width: 250px;
     cursor: pointer;
 }
 .tree-option:hover{
@@ -85,8 +85,8 @@ main {
     box-shadow: 0 4px 6px rgba(148, 42, 42, 0.1);
 }
 .tree-option h3 {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
